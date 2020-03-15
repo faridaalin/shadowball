@@ -3,15 +3,23 @@ html, body, * {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+   
+}
+
+.box, .info-container {
+    margin-top: 10%;
+
+}
+
+img {
+    width: 100%;
 }
 
 
 .main-menu, .nav-bar {
     background-color: black;
 }
-ul, li {
-    list-style: none;
-}
+
 a {
     text-decoration: none;
 }
@@ -76,12 +84,6 @@ display: inline-block;
     color: white;
 }
 
-/*.dropdown li{
-    position: relative;
-    display: none;
-}*/
-
-
 .dropdown {
  color: white;
  border: none;
@@ -98,6 +100,223 @@ display: inline-block;
 
 /*Hero banner*/
 .hero-banner {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/hero_image.jpg) center center/cover no-repeat;
-    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/img/hero_image.jpg) bottom center/cover no-repeat;
+    height: 60vh;
+}
+.hero-banner {
+    padding: 100px;
+    font-size: 32px;
+    line-height: 1.5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-banner span {
+    color: #E8F025;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.box {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+
+.box::-webkit-scrollbar {
+    display: none;
+}
+
+.box header {
+    padding-bottom: 5%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.card {
+    display: inline-block;
+    background-color: black;
+    width: 300px;
+    height: 100%;
+    position: relative;
+}
+
+.card-img-a {
+    background: url(/img/SHADOWBALL_PRO_ADVANCER.jpg) center center/cover no-repeat;
+    height: 300px;   
+}
+
+.card-img-b {
+    background: url(/img/SHADOWBALL_PRO_SIZE_5.jpg) center center/cover no-repeat;
+    height: 300px;   
+}
+.card-img-c {
+    background: url(/img/SHADOWBALL_PRO_SIZE_4.jpg) center center/cover no-repeat;
+    height: 300px;   
+}
+.card-img-d {
+    background: url(/img/SHADOWBALL_PRO_SIZE_.jpeg) center center/cover no-repeat;
+    height: 300px;   
+}
+
+.card:hover .card-img-a {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/img/SHADOWBALL_PRO_ADVANCER.jpg) center center/cover no-repeat;
+    transition: 0.5s;
+}
+
+.card:hover .card-img-b {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/img/SHADOWBALL_PRO_SIZE_5.jpg) center center/cover no-repeat;
+    transition: 0.5s;
+}
+
+.card:hover .card-img-c {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/img/SHADOWBALL_PRO_SIZE_4.jpg) center center/cover no-repeat;
+    transition: 0.5s;
+}
+
+.card:hover .card-img-d {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/img/SHADOWBALL_PRO_SIZE_.jpeg) center center/cover no-repeat;
+    transition: 0.5s;
+}
+.card button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #E8F025;
+    transform: translate(-50%, -50%);
+    padding: 12px 25px 12px 25px;
+    font-size: 18px;
+    border: none;
+    color: black;
+    width: 155px;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.card:hover button{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+    margin-bottom: 192px;
+}
+
+.card-content, .video-content {
+    flex: 1;
+}
+
+.card-content {
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.card-content img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 35%;
+}
+
+.card-content header {
+    padding: 20px 60px 20px 60px;
+    font-size: 32px;
+}
+
+.card-content  ul {
+    padding: 20px 60px 20px 60px;
+    font-size: 20px;
+    line-height: 2;
+    color: white;
+}
+
+.info-container .card-content a {
+    margin: 20px 0px 20px 60px;
+    font-size: 20px;
+    line-height: 2;
+    color: white;
+    border-bottom: 1px solid;
+}
+
+.card-content  ul,  i {
+    margin-left: 10px;
+    color: white;
+}
+
+.video-content iframe{
+    width: 100%; 
+    height: 100%
+}
+footer {
+    background-color: black;
+}
+
+
+footer .inner-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 40vh;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 2;
+}
+
+footer .contact img {
+    width: 50%;
+}
+footer ul {
+    list-style: none;
+}
+footer ul li{
+    font-weight: 300;
+    line-height: 2.3;
+}
+footer ul a {
+    color: white;
+}
+footer h3{
+    padding-bottom: 6px;
+}
+
+footer .social-media {
+    display: inline-flex;
+}
+
+footer .social-media i {
+    font-size: 20px;
+}
+
+footer input[type=text] {
+    width: 75%;
+    height: 35px;
+    border-radius: 3px;
+    background-color: #3B3A3A;
+    border: none;
+    padding: 0 0 0 15px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+footer input[type=submit] {
+    width: 48%;
+    height: 35px;
+    border-radius: 3px;
+    margin-top: 21px;
+    background: #E8F025;
+    border: none;
+    color: black;
+    font-size: 16px;
 }
