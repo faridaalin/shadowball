@@ -1,0 +1,390 @@
+
+html, body, * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+   
+}
+
+
+.box, .info-container {
+    padding-top: 50px;
+    padding-bottom: 250px;
+
+}
+
+img {
+    width: 100%;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.home-main {
+    margin-top: 100px;
+}
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-menu, .nav-bar {
+    background-color: #0d1017;
+}
+
+
+a {
+    text-decoration: none;
+}
+  
+.nav-bar {
+    background-color: #0d1017;
+    color: #DFE1EA;
+    height: 100px;
+    padding: 10px 30px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+   text-transform: uppercase;
+   position: relative;
+}
+
+
+
+.nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #DFE1EA;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+    
+}
+
+.cart {
+    color: #DFE1EA;
+    font-size: 32px;
+    margin-left: 15px;
+}
+
+.nav-links .nav-item a:hover  {
+    color: yellow;
+    border-bottom: 2px solid  yellow;
+    cursor: pointer;
+   
+}
+
+
+
+.logo img{
+    width: 80%;
+    margin: 10px 30px 10px;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 58px;
+    width: 100%;
+    padding: 5px 5px 5px 10px !important;
+    background-color: #0D1017;
+    color: #DDE4EB;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.25);
+    display: none;
+}
+
+.border-box {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.dropdown-content li, .dropdown-content a {
+    list-style: none;
+    padding: 5px 0px 5px 0px;
+    font-size: 14px;
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown:hover  .dropdown-content ~.dropdown-content:hover {
+    display: block;
+  }
+
+  .navbar-toggle {
+      display: none;
+  }
+
+
+
+
+/*Hero banner*/
+.hero-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/hero_image.jpg) bottom center/cover no-repeat;
+    height: 60vh;
+    
+}
+.hero-banner {
+    padding: 100px;
+    font-size: 32px;
+    line-height: 1.5;
+    color: #DFE1EA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-banner span {
+    color: #E8F025;
+    font-weight: 800;
+    font-size: 36px;
+}
+.box header {
+    display: flex;
+    margin: 0 auto;
+    text-align: left;
+}
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    position: relative;
+    width: 300px;
+}
+
+
+.card:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    opacity: .7;
+    z-index: 0;
+}
+
+.card > * {
+    z-index: 10;   
+}
+
+
+.card a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #E8F025;
+    transform: translate(-50%, -50%);
+    padding: 12px 60px 12px 60px;
+    color: #0d1017;
+    text-align: center;
+    transition: paddin, background-color 200ms ease-in;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 0;
+} 
+
+.card:hover a {
+    opacity: 1;      
+}
+
+.card a:hover {
+    padding: 14px 62px 14px 62px;
+    background-color: rgb(240, 247, 54);
+    transition: 200ms ease-in; 
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+
+.box::-webkit-scrollbar {
+    display: none;
+}
+
+.box header {
+    padding-bottom: 5%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+.card img:hover a{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.card:hover{
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+}
+
+.card-content, .video-content {
+    flex: 1;
+    
+}
+
+.video-content {
+    margin-left: 8px;
+}
+.card-content {
+    background-color: #0d1017;
+    color: #DFE1EA;
+    position: relative;
+    margin-right: 8px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.card-content img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 35%;
+}
+
+.card-content header {
+    padding: 50px 60px 20px 60px;
+    font-size: 32px;
+}
+
+.card-content  ul {
+    padding: 1px 58px 20px 60px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 2;
+    color: #DFE1EA;
+}
+
+
+.info-container .card-content a {
+    margin: 20px 0px 20px 60px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 2;
+    color: #DFE1EA;
+    border-bottom: 1px solid;
+}
+
+.card-content  ul,  i {
+    color: #DFE1EA;
+}
+
+.card-content a:hover  {
+    color:  #E8F025;
+}
+
+.video-content iframe{
+    width: 100%; 
+    height: 100%
+}
+
+
+
+
+/*Footer*/
+footer {
+    background-color: #0d1017;
+    padding: 73px 0 73px 0;
+}
+
+
+footer .inner-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    background-color: #0d1017;
+    color: #DFE1EA;
+    height: 40vh;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 2;
+}
+
+footer .contact img {
+    width: 50%;
+}
+
+footer .contact h3, li, p {
+    margin-top: 15px;
+}
+footer ul {
+    list-style: none;
+}
+footer ul li{
+    font-weight: 300;
+    line-height: 2.3;
+    margin-right: 14px;
+}
+footer ul a {
+    color: #DFE1EA;
+}
+footer ul a:hover {
+    color:  #E8F025;
+}
+
+footer h3{
+    padding-bottom: 6px;
+}
+
+footer .social-media {
+    display: inline-flex;
+}
+
+footer .social-media i {
+    font-size: 29px;
+}
+
+footer .social-media i:hover {
+    font-size: 25px;
+    color: #E8F025;;
+}
+
+footer input[type=text] {
+    padding: 16px 32px 16px 32px;
+    border-radius: 3px;
+    background-color: #3B3A3A;
+    border: none;
+    font-size: 16px;
+    color: #DFE1EA;
+}
+
+footer input[type=submit] {
+    border-radius: 3px;
+    margin-top: 21px;
+    background: #E8F025;
+    border: none;
+    color: #0d1017;
+    font-size: 16px;
+    padding: 16px 32px 16px 32px;
+}
+
+footer input[type=submit]:hover {
+    background: rgb(189, 194, 37);;
+}
+

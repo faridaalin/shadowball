@@ -1,0 +1,28 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0px;
+}
+
+.error-title {
+    font-size: 50px;
+}
+
+.error-content {
+    font-size: 24px;
+}
+
+.back-btn {
+    background: #E8F025;
+    text-decoration: none;
+    padding: 20px;
+    margin-top: 30px;
+    color: #0d1017;
+    border-radius: 3px;
+    font-size: 16px;
+}
+.back-btn:hover {
+    background: rgb(189, 194, 37);
+}
