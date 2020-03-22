@@ -202,6 +202,10 @@
       .dropdown-content {
           position: initial;
       }
+
+      .border-box li a{
+        font-size: 12px;
+    }
     /*Index*/
     .card-content header {
         padding: 0 21px 0 30px;
@@ -327,6 +331,12 @@
         footer .contact img {
             width: 35%;
         }
+        .shadowballs {
+            width: 300px;
+            height: 200px;
+        }
+
+    
 
   }
 

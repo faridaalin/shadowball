@@ -5,13 +5,8 @@ console.dir(navbarToggle)
 
 navbarToggle.addEventListener('click', () => {
     navBar.classList.toggle('nav-active');
-})
-
-
-const dropdown = document.querySelector('.dropdown')
-console.dir(dropdown)
-
-dropdown.addEventListener('click', () => {
     const dropdownContent = document.querySelector('.dropdown-content')
-    console.dir(event)
+    dropdownContent.style.display = "block"
 })
+
+
