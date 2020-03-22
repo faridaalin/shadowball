@@ -51,7 +51,7 @@
 }
 
 .sub-card:hover {
-    box-shadow: 0 0.125rem 1rem 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0.125rem 1rem 3px rgba(0, 0, 0, 0.08);
 }
 
 .sub-card-content {

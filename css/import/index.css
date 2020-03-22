@@ -7,6 +7,12 @@ html, body, * {
    
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 
 .box, .info-container {
     padding-top: 50px;
@@ -71,12 +77,13 @@ a {
     color: #DFE1EA;
     border-bottom: 2px solid transparent;
     transition: 0.5s;
+    font-size: 13px;
     
 }
 
 .cart {
     color: #DFE1EA;
-    font-size: 32px;
+    font-size: 30px;
     margin-left: 15px;
 }
 
@@ -87,12 +94,15 @@ a {
    
 }
 
-
-
-.logo img{
-    width: 80%;
+.main-menu .logo {
+    width: 22%;
     margin: 10px 30px 10px;
 }
+
+/* .logo img{
+    width: 80%;
+    margin: 10px 30px 10px;
+} */
 
 .dropdown-content {
     position: absolute;
@@ -311,6 +321,8 @@ a {
 footer {
     background-color: #0d1017;
     padding: 73px 0 73px 0;
+    margin-top: auto;
+    height: 100%;
 }
 
 
@@ -320,7 +332,6 @@ footer .inner-footer {
     align-items: self-start;
     background-color: #0d1017;
     color: #DFE1EA;
-    height: 40vh;
     width: 90%;
     margin: 0 auto;
     line-height: 2;
