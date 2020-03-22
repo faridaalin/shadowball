@@ -365,7 +365,7 @@ select {
 
 
 /*.img-0 {
-    background-image: url("/img/shadowball_pro_size3_01.jpg");
+    background-image: url("img/shadowball_pro_size3_01.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -373,7 +373,7 @@ select {
 }
 
 .img-1 {
-    background-image: url("/img/shadowball_pro_size3_02.jpg");
+    background-image: url("img/shadowball_pro_size3_02.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -381,7 +381,7 @@ select {
 }
 
 .img-2 {
-    background-image: url("/img/shadowball_pro_size3_03.jpg");
+    background-image: url("img/shadowball_pro_size3_03.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -389,7 +389,7 @@ select {
 }
 
 .img-3 {
-    background-image: url("/img/shadowball_pro_size3_04.jpg");
+    background-image: url("img/shadowball_pro_size3_04.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

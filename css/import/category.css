@@ -70,7 +70,7 @@ padding-top: 100px;
 }
 
 .shadowballs:nth-of-type(1) {
-    background-image: url(/img/category_shadowBall.jpg);
+    background-image: url(img/category_shadowBall.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,7 +78,7 @@ padding-top: 100px;
 }
 
 .shadowballs:nth-of-type(2) {
-    background-image: url(/img/Nashua-rugby-skills-project-shadowball-Springbok-high-school-28.jpg);
+    background-image: url(img/Nashua-rugby-skills-project-shadowball-Springbok-high-school-28.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,7 +86,7 @@ padding-top: 100px;
 }
 
 .section-2:nth-of-type(1) {
-    background-image: url(/img/BoosterPack.jpg);
+    background-image: url(img/BoosterPack.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,7 +94,7 @@ padding-top: 100px;
 }
 
 .section-2:nth-of-type(2) {
-    background-image: url(/img/wear.jpg);
+    background-image: url(img/wear.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
