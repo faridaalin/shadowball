@@ -11,7 +11,7 @@
 }
 
 .banner-img {
-    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(img/rugby_balls.jpg) center center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(../../img/rugby_balls.jpg) center center/cover no-repeat;
     height: 30vh;
 }
 .inner-main {
