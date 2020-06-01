@@ -1,26 +1,36 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .banner-title {
-  font-size: 35px;
+  font-size: 1.3rem;
   font-weight: 800;
-  padding-top: 25px;
-  padding-bottom: 48px;
+  padding-bottom: 15px;
+  padding-left: 0;
   text-transform: uppercase;
 }
 
-.small-banner {
-  padding-bottom: 115px;
-}
-
 .banner-img {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../../img/rugby_balls.jpg) center center/cover no-repeat;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../../img/rugby_balls.jpg) center center/cover no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../../img/rugby_balls.jpg) center center/cover no-repeat;
   height: 30vh;
+  position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .inner-main {
-  padding-bottom: 460px;
+  margin-top: 30vh;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .inner-main li {
-  margin: 0;
+  margin: 0 auto;
 }
 
 .card-img {
@@ -35,40 +45,53 @@
 }
 
 .sub-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .sub-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  padding: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
 .sub-card:hover {
-  box-shadow: 0 0.125rem 1rem 3px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0.125rem 1rem 3px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0.125rem 1rem 3px rgba(0, 0, 0, 0.08);
 }
 
 .sub-card-content {
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .sub-card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-right: 15px;
   padding-bottom: 60px;
 }
 
 .sub-card-title {
-  font-size: 16px;
-  padding: 24px 12px 31px 0px;
+  font-size: 0.8rem;
+  padding: 1rem 0;
   font-weight: 800;
 }
 
 .sub-card-price {
-  font-size: 23px;
+  font-size: 1.2rem;
   font-weight: 300;
 }

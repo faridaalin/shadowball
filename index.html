@@ -5,66 +5,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://use.fontawesome.com/e1e13e9e15.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
-  <title>Home</title>
+  <title>ShadowBall | Home</title>
 </head>
 
 <body>
 
-  <header class="main-menu sticky">
-    <a href="index.html" class="logo">
-      <img src="img/shadowball_logo.png" alt="Shadowball logo">
-    </a>
-    <span class="navbar-toggle" id="js-navbar-toggle">
-      <i class="fa fa-bars"></i>
-    </span>
-    <nav class="nav-bar">
-      <ul class="nav-links">
-        <li class="nav-item dropdown"><a href="category.html">Shop</a>
-          <ul class="dropdown-content">
-            <div class="border-box">
-              <li><a href="category.html">Rugby Balls</a> </li>
-              <li><a href="">Equipment</a> </li>
-              <li><a href="">Booster Team Pack</a> </li>
-              <li><a href="">Wear</a> </li>
-            </div>
+  <header class="main-header">
+    <div class="inner-header">
+      <div  class="logo">
+        <a href="index.html">
+          <img src="img/shadowball_logo.png" alt="Shadowball logo">
+        </a>
+      </div>
+
+      <nav>
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fa fa-bars"></i>
+        </span>
+        <div class="nav-bar">
+          <ul class="nav-links">
+            <li class="nav-item dropdown"><a href="#">Shop</a>
+              <ul class="dropdown-content">
+                <div class="border-box">
+                  <li><a href="category.html">Rugby Balls</a> </li>
+                  <li><a href="">Equipment</a> </li>
+                  <li><a href="">Booster Team Pack</a> </li>
+                  <li><a href="">Wear</a> </li>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="error.html">Academy</a></li>
+            <li class="nav-item"><a href="error.html">About</a></li>
+            <li class="nav-item"><a href="error.html">Contact</a></li>
+            <li class="nav-item cart"><i class="fa fa-shopping-cart"></i></li>
+            <div class="itemNumber"><span>0</span></div>
           </ul>
-        </li>
-        <li class="nav-item"><a href="error.html">Academy</a></li>
-        <li class="nav-item"><a href="error.html">About</a></li>
-        <li class="nav-item"><a href="error.html">Contact</a></li>
-        <li class="nav-item cart"><i class="fa fa-shopping-cart"></i></li>
-        <div class="itemNumber"><span>0</span></div>
-      </ul>
-    </nav>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="home-main">
     <section class="hero-banner">
+      <div class="hero-banner-content">
         <p>Enables <span>players of all ages</span> and levels to perfect
           passing, catching and throwing skills and techniques – in their own time, unsupervised, at
           their own performance pace, and <span>independently of a training partner.</span>
         </p>
+      </div>
+
     </section>
 
-    <div class="main">
+    <div class="inner-main-home">
       <section class="box">
         <header>Improve your skills with Shadowball</header>
-        <div class="cards-container">
-          <div class="card">
+        <div class="cards-container sub-cards">
+          <div class="sub-card-item">
             <img class="" src="img/SHADOWBALL_PRO_ADVANCER.jpg" alt="Shadowball">
             <a href="error.html">View</a>
           </div>
-          <div class="card">
+          <div class="sub-card-item">
             <img class="" src="img/shadowball_pro_size3_02.jpg" alt="Shadowball">
             <a href="pdp.html">View</a>
           </div>
-          <div class="card">
+          <div class="sub-card-item">
             <img class="" src="img/SHADOWBALL_PRO_SIZE_4.jpg" alt="Shadowball">
             <a href="error.html">View</a>
           </div>
-          <div class="card">
+          <div class="sub-card-item">
             <img class="" src="img/SHADOWBALL_PRO_ADVANCER.jpg" alt="Shadowball">
             <a href="error.html">View</a>
           </div>
@@ -79,14 +89,27 @@
             <li>Practice line out throws</li>
             <li>Improve ambidextrous spin passing ability</li>
             <li>Develop stronger, longer more accurate passing</li>
+            <li><a href="error.html" target="_blank">Read More         <svg enable-background="new 0 0 32 32" id="Слой_1" version="1.1" viewBox="0 0 32 32" xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path clip-rule="evenodd"
+                d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z"
+                fill="#121313" fill-rule="evenodd" id="Arrow_Forward" />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g /></svg></a></li>
           </ul>
-          <a href="error.html" target="_blank">Read More</a><i class="fa fa-arrow-right"></i>
-          <img src="img/triangle.png" alt="Yellow triangle">
+
+
+          <!-- <img src="img/triangle.png" alt="Yellow triangle"> -->
+          <span class="triangle"></span>
         </div>
-        <div class="video-content">
-          <iframe src="https://www.youtube.com/embed/h4r_o-A_VyU" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+          <div class="video-content video-container">
+            <iframe src="https://www.youtube.com/embed/h4r_o-A_VyU" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
       </section>
     </div>
   </main>
@@ -94,7 +117,11 @@
   <footer>
     <div class="inner-footer">
       <section class="contact">
-        <img src="img/shadowball_logo.png" alt="ShadowBall logo">
+        <div  class="logo">
+          <a href="index.html">
+            <img src="img/shadowball_logo.png" alt="Shadowball logo">
+          </a>
+        </div>
         <h3>Contact</h3>
         <ul>
           <li>info@shadowball.co.za</li>
@@ -106,7 +133,7 @@
           <li><i class="fa fa-twitter-square"></i></li>
           <li><i class="fa fa-linkedin"></i></li>
         </ul>
-        <p id="copywrightYear">2020 Shadowball. All rights reserved</p>
+        <p class="copywright" id="copywrightYear">2020 Shadowball. All rights reserved</p>
       </section>
 
       <section class="footer-menu">
@@ -120,14 +147,14 @@
       </section>
 
       <section class="newsletter">
-        <h3>Subscribe to our Newsletter</h3>
+        <h3>Newsletter</h3>
         <form>
           <div class="container">
             <input type="text" placeholder="Email" name="mail" required>
           </div>
 
           <div class="container">
-            <input type="submit" value="Subscribe">
+            <button type="submit">Subscribe</button>
           </div>
         </form>
       </section>

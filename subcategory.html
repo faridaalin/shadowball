@@ -5,44 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://use.fontawesome.com/e1e13e9e15.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
   <title>Sub Category</title>
 </head>
 
 <body>
 
-  <header class="main-menu sticky">
-    <a href="index.html" class="logo">
-      <img src="img/shadowball_logo.png" alt="Shadowball logo">
-    </a>
-    <span class="navbar-toggle" id="js-navbar-toggle">
-      <i class="fa fa-bars"></i>
-  </span>
-    <nav class="nav-bar">
-      <ul class="nav-links">
-        <li class="nav-item dropdown"><a href="category.html">Shop</a>
-           <ul class="dropdown-content">
-            <div class="border-box">
-              <li><a href="subcategory.html">Rugby Balls</a> </li>
-              <li><a href="">Equipment</a> </li>
-              <li><a href="">Booster Team Pack</a> </li>
-              <li><a href="">Wear</a> </li>
-            </div>
+  <header class="main-header">
+    <div class="inner-header">
+      <div  class="logo">
+        <a href="index.html">
+          <img src="img/shadowball_logo.png" alt="Shadowball logo">
+        </a>
+      </div>
+
+      <nav>
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fa fa-bars"></i>
+        </span>
+        <div class="nav-bar">
+          <ul class="nav-links">
+            <li class="nav-item dropdown"><a href="#" class="active-link">Shop</a>
+              <ul class="dropdown-content">
+                <div class="border-box">
+                  <li><a href="category.html" class="active-link">Rugby Balls</a> </li>
+                  <li><a href="">Equipment</a> </li>
+                  <li><a href="">Booster Team Pack</a> </li>
+                  <li><a href="">Wear</a> </li>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="error.html">Academy</a></li>
+            <li class="nav-item"><a href="error.html">About</a></li>
+            <li class="nav-item"><a href="error.html">Contact</a></li>
+            <li class="nav-item cart"><i class="fa fa-shopping-cart"></i></li>
+            <div class="itemNumber"><span>0</span></div>
           </ul>
-        </li>
-        <li class="nav-item"><a href="error.html">Academy</a></li>
-        <li class="nav-item"><a href="error.html">About</a></li>
-        <li class="nav-item"><a href="error.html">Contact</a></li>
-        <li class="nav-item cart"><i class="fa fa-shopping-cart"></i></li>
-        <span class="itemNumber"><span>0</span></span>
-      </ul>
-    </nav>
+        </div>
+      </nav>
+    </div>
   </header>
 
-
-  <main class="main">
-<ul class="breadcrumps">
+  <ul class="breadcrumps">
     <li class="breadcrumps-item">
         <a href="/" class="breadcrump_link">Home</a>
     </li>
@@ -53,6 +58,8 @@
         <a class="breadcrump_link breadcrump_link-active">Rugby Balls</a>
     </li>
 </ul>
+
+  <main class="main main-subcategory">
 
 <section class="small-banner">
     <h1 class="banner-title">Rugby Balls</h1>
@@ -207,7 +214,11 @@
   <footer>
     <div class="inner-footer">
       <section class="contact">
-        <img src="img/shadowball_logo.png" alt="ShadowBall logo">
+        <div  class="logo">
+          <a href="index.html">
+            <img src="img/shadowball_logo.png" alt="Shadowball logo">
+          </a>
+        </div>
         <h3>Contact</h3>
         <ul>
           <li>info@shadowball.co.za</li>
@@ -219,7 +230,7 @@
           <li><i class="fa fa-twitter-square"></i></li>
           <li><i class="fa fa-linkedin"></i></li>
         </ul>
-        <p id="copywrightYear">2020 Shadowball. All rights reserved</p>
+        <p class="copywright" id="copywrightYear">2020 Shadowball. All rights reserved</p>
       </section>
 
       <section class="footer-menu">
@@ -233,19 +244,20 @@
       </section>
 
       <section class="newsletter">
-        <h3>Subscribe to our Newsletter</h3>
+        <h3>Newsletter</h3>
         <form>
           <div class="container">
             <input type="text" placeholder="Email" name="mail" required>
           </div>
 
           <div class="container">
-            <input type="submit" value="Subscribe">
+            <button type="submit">Subscribe</button>
           </div>
         </form>
       </section>
     </div>
   </footer>
+
 
 
   <script src="js/script.js"></script>

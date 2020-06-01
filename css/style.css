@@ -1,7 +1,9 @@
+@import "import/global.css";
 @import "import/index.css";
 @import "import/category.css";
 @import "import/subcategory.css";
 @import "import/pdp.css";
 @import "import/error.css";
-@import "import/media_quaries.css";
+@import "import/responsive.css";
+
 
