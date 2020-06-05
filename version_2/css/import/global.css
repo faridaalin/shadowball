@@ -107,8 +107,8 @@ a {
 }
 
 .nav-links .active-link, .nav-links .nav-item a:hover {
-  color: yellow;
-  border-bottom: 2px solid yellow;
+  color: #E8F025;
+  border-bottom: 2px solid #E8F025;
   cursor: pointer;
 }
 

@@ -52,7 +52,7 @@
 }
 
 .hero-banner span {
-  color: #E8F025;
+  color: var(--clr-yellow);
   font-weight: 800;
 }
 
@@ -69,17 +69,18 @@
 .buttons {
   margin-right: auto;
 }
-
-.buttons button:nth-child(1) {
-  padding: 0.7rem 1.8rem;
+.buttons  button {
   background: #E8F025;
+  border: 2px solid var(--clr-yellow);
 }
 
+.buttons button:nth-child(1) {
+  padding: 0.7rem 2.3rem;
+}
 .buttons button:nth-child(2) {
   background: transparent;
-  border: 2px solid #E8F025;
   color: #DFE1EA;
-  padding: 0.57rem 0.8rem;
+  padding: 0.7rem 1.8rem;
 }
 .buttons button:nth-child(2) a {
   color: #DFE1EA;
@@ -93,6 +94,7 @@
 
 .buttons button:nth-child(1):hover {
 background-color: #878c0b;
+border-color:  #878c0b;
 }
 
 .buttons button:nth-child(2):hover, .buttons button:nth-child(2):hover a {
@@ -261,7 +263,7 @@ object {
 }
 
 .card-content svg path {
-  fill: #E8F025;
+  fill: var(--clr-yellow);
 }
 
 .card-content header {
@@ -296,5 +298,5 @@ object {
 }
 
 .card-content a:hover {
-  color: #E8F025;
+  color: var(--clr-yellow);
 }
